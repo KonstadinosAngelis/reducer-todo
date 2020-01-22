@@ -3,12 +3,11 @@ import React, { useContext, useState } from 'react'
 import { ToDoContext } from '../context/ToDoContext';
 
 export const ToDoForm = () => {
-  const {state, dispatch} = useContext(ToDoContext);
+  const {dispatch} = useContext(ToDoContext);
   const [toDoText, setToDoText] = useState("")
 
   const onChange = e => {
     setToDoText(e.target.value)
-    console.log(toDoText)
   }
 
   return(
